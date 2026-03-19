@@ -1,0 +1,80 @@
+# TaskApp - Aplicación Android con MVVM
+
+## Descripción del proyecto
+
+TaskApp es una aplicación Android desarrollada en Kotlin que tiene como objetivo gestionar tareas de manera básica. El proyecto implementa parcialmente la arquitectura MVVM, con el propósito de organizar el código en capas y mejorar su estructura.
+
+Actualmente, la aplicación se encuentra en desarrollo y presenta algunos errores de configuración y ejecución, especialmente relacionados con dependencias y sincronización de Gradle.
+
+---
+
+## Arquitectura implementada
+
+El proyecto está organizado en una estructura basada en MVVM, aunque no se encuentra completamente funcional:
+
+### Model (Modelo)
+
+Incluye las entidades y contratos principales:
+
+* `Task.kt`
+* `TaskRepository.kt`
+
+### Data (Datos)
+
+Contiene una implementación simulada del repositorio:
+
+* `FakeTaskRepository.kt`
+
+### ViewModel
+
+Se implementa la lógica de negocio mediante un ViewModel:
+
+* `TaskViewModel.kt`
+* Uso básico de StateFlow
+
+### UI (Vista)
+
+Se utiliza Jetpack Compose para construir la interfaz:
+
+* Pantalla de listado de tareas
+
+### DI (Inyección de dependencias)
+
+Se inició la configuración con Hilt, aunque presenta inconvenientes:
+
+* `RepositoryModule.kt`
+
+---
+
+## Tecnologías utilizadas
+
+* Kotlin
+* Android Studio
+* Jetpack Compose
+* Arquitectura MVVM
+* Hilt (configuración parcial)
+* StateFlow
+
+---
+
+## Estado actual del proyecto
+
+El proyecto presenta los siguientes problemas:
+
+* Error en la sincronización de Gradle
+* Posibles fallos en la configuración de Hilt
+* La aplicación no ejecuta correctamente en todos los casos
+
+---
+
+## Ejecución
+
+Para intentar ejecutar el proyecto:
+
+```bash
+./gradlew build
+```
+
+Sin embargo, puede que se presenten errores durante la compilación.
+
+---
